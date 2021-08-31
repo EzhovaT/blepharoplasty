@@ -1,0 +1,44 @@
+.card {
+  width: 178px;
+  margin-left: auto;
+  padding: 10px;
+  border-left: 3px solid $card-line-color;
+
+  @media (min-width: $middle-mobile-width) {
+    width: 303px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    margin-left: 149px;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    width: 372px;
+  }
+}
+
+.card__subtitle {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+
+  @media (min-width: $middle-mobile-width) {
+    font-size: 15px;
+  line-height: 22px;
+  }
+}
+
+.card__descr {
+  font-size: 10px;
+  line-height: 15px;
+
+  @media (min-width: $middle-mobile-width) {
+    font-size: 15px;
+  line-height: 22px;
+  }
+}

@@ -1,0 +1,66 @@
+.header-logo {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 134px;
+    height: 134px;
+    left: 331px;
+    top: 0;
+    z-index: 2;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    left: 630px;
+  }
+}
+
+.header-logo__img {
+  display: block;
+  margin: 7px auto;
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 94px;
+    height: 94px;
+    top: 3px;
+    left: 19px;
+  }
+}
+
+.header-logo__bg {
+  width: 60px;
+  position: relative;
+  border-width: 44px 0 0;
+  border-style: solid;
+  border-color: $light-background-color transparent;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.05);
+
+  &::before {
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top: 20px solid $light-background-color;
+    border-left: 32px solid transparent;
+    border-right: 38px solid transparent;
+
+    @media (min-width: $tablet-width) {
+      border-top: 47px solid #fff;
+      border-left: 68px solid transparent;
+      border-right: 66px solid transparent;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    border-width: 85px 0 0;
+  }
+}

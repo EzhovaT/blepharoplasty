@@ -1,0 +1,66 @@
+.examples {
+  background-color: $dark-background-color;
+  background-image: url("../img/bgLineTop.svg"), url("../img/bgLineBottom.svg");
+  background-position: top center, bottom center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  text-align: center;
+
+  @media (min-width: $middle-mobile-width) {
+    padding: 130px 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 130px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: top left -405px, bottom left -405px;
+  }
+
+  @media (min-width: $desktop-width1200) {
+    background-position: top center, bottom center;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    padding: 130px 38px;
+  }
+}
+
+.examples__title {
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+}
+
+.examples__tagline-link {
+  border: 1px solid #6f3ea2;
+  border-image: linear-gradient(
+    267deg,
+    #f9d76c,
+    #f9d76c,
+    #f9a837,
+    #f03d74,
+    #e62299,
+    #6f3ea2,
+    #4850ab
+  );
+  background: linear-gradient(
+    265deg,
+    #f9d76c,
+    #f9d76c,
+    #f9a837,
+    #f03d74,
+    #e62299,
+    #6f3ea2,
+    #4850ab
+  );
+  border-image-slice: 1;
+  background-clip: text;
+
+  &::before {
+    background-image: url("../img/inst.svg");
+  }
+}

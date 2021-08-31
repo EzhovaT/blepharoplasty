@@ -1,0 +1,97 @@
+.header-menu {
+  width: 222px;
+  padding: 16px;
+  z-index: 2;
+  background-color: $open-menu-bg;
+  backdrop-filter: blur(2px);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.8s ease;
+
+  @media (min-width: $middle-mobile-width) {
+    width: 281px;
+    overflow: hidden;
+  }
+
+  @media (min-width: $tablet-width) {
+    opacity: 1;
+    visibility: visible;
+
+    position: relative;
+    display: grid;
+    justify-items: end;
+    grid-template-columns: 288px 169px 262px;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(0);
+    padding: 16px 0;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    grid-template-columns: 1fr 169px 1fr;
+    padding: 0;
+    align-items: center;
+  }
+}
+
+.header-menu__btn {
+  @extend %fontMPlus;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 87px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  line-height: 22px;
+  color: $light-text-color;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header-menu__telephones {
+  @extend %fontMPlus;
+  padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 3/4;
+    grid-row: 1;
+    width: 262px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    justify-self: center;
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
+}
+
+.header-menu__social-links {
+  width: 96px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 1;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    align-items: center;
+  }
+}

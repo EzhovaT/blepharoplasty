@@ -1,0 +1,62 @@
+.button {
+  @extend %fontMPlus;
+  text-align: left;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 15px 35px;
+  background: $color-btn;
+  box-shadow: 0px 12px 24px rgba(252, 54, 152, 0.45);
+  border-radius: 2px;
+  border: none;
+  color: $light-text-color;
+  display: block;
+  margin: 15px auto 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
+  }
+}
+
+.button_light {
+  margin-top: 30px;
+  background: transparent;
+  color: $main-dark-color;
+  border: 2px solid $main-dark-color;
+  box-shadow:none;
+}
+
+.button_link {
+  width: 261px;
+
+  .button__text {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 14px;
+      right: 10px;
+      top: 4px;
+      background-image: url("../img/buttonArrow.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $middle-desktop-width) {
+        right: -20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: -20px;
+      }
+    }
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    width: 275px;
+  }
+}
+

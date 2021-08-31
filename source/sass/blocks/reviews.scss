@@ -1,0 +1,34 @@
+.reviews {
+  padding: 50px 0;
+
+  @media (min-width: $middle-desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.reviews__title {
+  min-width: 230px;
+  margin-bottom: 30px;
+
+  @media (min-width: $middle-mobile-width) {
+    min-width: 344px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 466px;
+  }
+}
+
+.reviews__tagline-link {
+  border: 1px solid #90191E;
+  border-image: linear-gradient(267deg,#EF2F36, #90191E);
+  background: linear-gradient(265deg, #EF2F36, #90191E);
+  border-image-slice: 1;
+  background-clip: text;
+
+  &::before {
+    background-image: url("../img/youtube.svg");
+    height: 11px;
+    top: 20px;
+  }
+}

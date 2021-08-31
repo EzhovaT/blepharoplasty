@@ -1,0 +1,54 @@
+.section-title {
+  @extend %fontCormorant;
+  position: relative;
+  width: 215px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 10px;
+    height: 11px;
+    background-image: url("../img/decorHeader.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 27px;
+    }
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  @media (min-width: $middle-mobile-width) {
+    width: 385px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+    width: 506px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 61px;
+    width: 620px;
+  }
+}

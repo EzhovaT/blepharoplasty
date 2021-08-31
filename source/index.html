@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;700&family=M+PLUS+1p:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Dr.Koblandin Clinic</title>
+</head>
+<body class="page">
+  <div class="page__wrapper">
+    <header class="header">
+      <div class="container header__inner">
+        <button class="header__menu-btn" type="button" aria-label="Открыть меню.">
+          <svg class="header__btn-icon" width="25" height="27">
+            <use href="img/sprite.svg#vector"></use>
+          </svg>
+        </button>
+
+        <div class="header-menu ">
+          <button class="header-menu__btn" type="button" aria-label="Закрыть меню.">
+            <svg class="header-menu__icon-cross" width="15" height="14">
+              <use href="img/sprite.svg#cross"></use>
+            </svg>
+            Закрыть
+          </button>
+          <nav class="custom-menu">
+            <ul class="custom-menu__list">
+              <li class="custom-menu__item">
+                <a class="custom-menu__link" href="#examples">Наши работы</a>
+              </li>
+              <li class="custom-menu__item">
+                <a class="custom-menu__link" href="#problems">Какие проблемы решает</a>
+              </li>
+              <li class="custom-menu__item">
+                <a class="custom-menu__link" href="#reviews">Наши отзывы</a>
+              </li>
+              <li class="custom-menu__item">
+                <a class="custom-menu__link" href="#doctors">Наши волшебники</a>
+              </li>
+              <li class="custom-menu__item">
+                <a class="custom-menu__link" href="#map">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header-menu__telephones">
+            <div class="contact">
+              <p class="contact__city">г.Алматы</p>
+              <a class="contact__phone" href="tel:+7 775 705 33 33">+7 775 705 33 33</a>
+            </div>
+            <div class="contact">
+              <p class="contact__city">г.Нур-Султан</p>
+              <a class="contact__phone" href="tel:+7 775 705 33 33">+7 775 705 33 33</a>
+            </div>
+          </div>
+
+          <div class="header-menu__social-links social-network">
+            <a class="social-network__link social-network__link_header" href="#" aria-label="link to the social network instagram">
+              <svg class="social-network__icon" width="13" height="13">
+                <use href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+            <a class="social-network__link social-network__link_header" href="#" aria-label="link to the social network facebook">
+              <svg class="social-network__icon" width="10" height="18">
+                <use href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a class="social-network__link social-network__link_header" href="#" aria-label="link to the social network youtube">
+              <svg class="social-network__icon" width="14" height="10">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="header-logo">
+          <div class="header-logo__bg"></div>
+          <img class="header-logo__img" src="img/logo.svg" width="42px" height="42px" alt="Логотип клиники Dr.Koblandin">
+        </div>
+
+        <button class="call-btn popup-call" type="button">Заказать звонок</button>
+      </div>
+    </header>
+
+    <div class="banner banner__container">
+      <div class="banner__inner">
+        <h1 class="banner__title">Dr.Koblandin Clinic</h1>
+        <p class="banner__tagline">Поднимите мне веки!</p>
+        <p class="banner__subtitle">Выгодные условия блефаропластики</p>
+        <p class="banner__descr">Экономия до 200 000 тенге</p>
+        <p class="banner__descr">Рассрочка до 6 месяцев без переплаты</p>
+        <button class="button banner__btn popup-consultation" type="button">Бесплатная консультация</button>
+      </div>
+      <div class="banner__img-box">
+        <img class="banner__img" src="img/bg100.jpg" width="320" height="483" alt="">
+      </div>
+    </div>
+
+    <section class="clarification">
+      <div class="container">
+        <h2 class="section-title">Что такое блеферопластика </h2>
+        <div class="clarification__inner">
+          <div class="clarification__content">
+            <p class="clarification__descr">
+              <spn class="clarification__subtitle">Пластика нижних век —</spn>
+              данная операция позволяет устранить дряблость и провисание кожи. Так же удаётся скрыть чрезмерно выделяющиеся слёзные борозды
+            </p>
+            <p class="clarification__descr">
+              <spn class="clarification__subtitle">Пластика нижних век —</spn>
+              показанием являются грыжи, которые служат утяжелителем, из-за чего наблюдается опускание века
+            </p>
+            <p class="clarification__descr">
+              <spn class="clarification__subtitle">Круговая пластика век —</spn>
+              вмешательство включает работу над верхними и нижними веками. С помощью данной операции удаётся добиться максимально завершённого и целостного результата
+            </p>
+          </div>
+
+          <div class="clarification__img-box">
+            <img class="clarification__img" src="img/clarification@1x.jpg" srcset="img/clarification@2x.jpg 2x" alt="" width="288" height="288">
+          </div>
+
+          <div class="clarification__content">
+            <p class="clarification__descr">
+              <spn class="clarification__subtitle">Трансконъюнктивальная блефаропластика —</spn>
+              позволяет решить внешние проблемы путём удаления жировиков и грыж через специальные проколы на слизистой
+            </p>
+            <p class="clarification__descr">
+              <spn class="clarification__subtitle">Кантопексия —</spn>
+              назначается с целью поднятия наружных уголков глаз и последующей их фиксации на месте
+            </p>
+            <p class="clarification__descr">
+              <spn class="clarification__subtitle">Перераспределение жировых участков —</spn>
+              показанием к вмешательству данного типа является очевидная асимметрия зоны лица вокруг глаз
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="examples" id="examples">
+      <h2 class="examples__title section-title">Работы наших специалистов</h2>
+      <div class="section-tagline">
+        <p class="section-tagline__subtitle">Подписывайтесь на наш
+          <span class="section-tagline__span section-tagline__span_inst">instagram</span>
+        </p>
+        <a class="section-tagline__link examples__tagline-link" href="#"> Подписаться</a>
+      </div>
+
+      <div class="examples-slider">
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/1after@1x.jpg" srcset="img/examples/1after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/1before@1x.jpg" srcset="img/examples/1before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/1after@1x.jpg" srcset="img/examples/1after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/1before@1x.jpg" srcset="img/examples/1before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/2after@1x.jpg" srcset="img/examples/2after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/2before@1x.jpg" srcset="img/examples/2before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/2after@1x.jpg" srcset="img/examples/2after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/2before@1x.jpg" srcset="img/examples/2before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/3after@1x.jpg" srcset="img/examples/3after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/3before@1x.jpg" srcset="img/examples/3before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/3after@1x.jpg" srcset="img/examples/3after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/3before@1x.jpg" srcset="img/examples/3before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/4after@1x.jpg" srcset="img/examples/4after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/4before@1x.jpg" srcset="img/examples/4before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/4after@1x.jpg" srcset="img/examples/4after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/4before@1x.jpg" srcset="img/examples/4before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/5after@1x.jpg" srcset="img/examples/5after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/5before@1x.jpg" srcset="img/examples/5before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/5after@1x.jpg" srcset="img/examples/5after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/5before@1x.jpg" srcset="img/examples/5before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/1after@1x.jpg" srcset="img/examples/1after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/1before@1x.jpg" srcset="img/examples/1before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/1after@1x.jpg" srcset="img/examples/1after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/1before@1x.jpg" srcset="img/examples/1before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/2after@1x.jpg" srcset="img/examples/2after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/2before@1x.jpg" srcset="img/examples/2before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/2after@1x.jpg" srcset="img/examples/2after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/2before@1x.jpg" srcset="img/examples/2before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/3after@1x.jpg" srcset="img/examples/3after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/3before@1x.jpg" srcset="img/examples/3before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/3after@1x.jpg" srcset="img/examples/3after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/3before@1x.jpg" srcset="img/examples/3before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/4after@1x.jpg" srcset="img/examples/4after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/4before@1x.jpg" srcset="img/examples/4before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+        <div class="examples-slider__card">
+          <p class="examples-slider__descr examples-slider__descr_after">После</p>
+          <div class="examples-slider__images">
+            <img class="examples-slider__img" src="img/examples/4after@1x.jpg" srcset="img/examples/4after@2x.jpg 2x"  alt="Фото-пример работы после операции" width="150px" height="69">
+            <img class="examples-slider__img" src="img/examples/4before@1x.jpg" srcset="img/examples/4before@2x.jpg 2x" alt="Фото-пример работы до операции" width="150px" height="69">
+          </div>
+          <p class="examples-slider__descr examples-slider__descr_before">До</p>
+        </div>
+
+      </div>
+
+      <a class="button button_link examples__btn" href="#">
+        <p class="button__text">Смотреть все работы</p>
+      </a>
+    </section>
+
+    <section class="problems" id="problems">
+      <h2 class="problems__title section-title">Какие проблемы решает блеферопластика</h2>
+      <div class="problems__items">
+        <div class="problem problem_1">
+          <div class="problem__inner">
+            <svg class="problem__icon" width="56" height="56">
+              <use href="img/spriteProblems.svg#1"></use>
+            </svg>
+            <p class="problem__descr">Удаление избытков кожи верхнего и нижнего век</p>
+          </div>
+        </div>
+        <div class="problem problem_2">
+          <div class="problem__inner">
+            <svg class="problem__icon" width="56" height="56">
+              <use href="img/spriteProblems.svg#2"></use>
+            </svg>
+            <p class="problem__descr">Коррекция опущения верхнего века</p>
+          </div>
+        </div>
+        <div class="problem problem_3">
+          <div class="problem__inner">
+            <svg class="problem__icon" width="56" height="56">
+              <use href="img/spriteProblems.svg#3"></use>
+            </svg>
+            <p class="problem__descr">Устранение морщин под глазами</p>
+          </div>
+        </div>
+        <div class="problem problem_4">
+          <div class="problem__inner">
+            <svg class="problem__icon" width="56" height="56">
+              <use href="img/spriteProblems.svg#4"></use>
+            </svg>
+            <p class="problem__descr">Иссекает излишки кожи на нижних веках</p>
+          </div>
+        </div>
+        <div class="problem problem_5">
+          <div class="problem__inner">
+            <svg class="problem__icon" width="56" height="56">
+              <use href="img/spriteProblems.svg#5"></use>
+            </svg>
+            <p class="problem__descr">Устранение жировых грыж</p>
+          </div>
+        </div>
+        <div class="problem problem_6">
+          <div class="problem__inner">
+            <svg class="problem__icon" width="56" height="56">
+              <use href="img/spriteProblems.svg#6"></use>
+            </svg>
+            <p class="problem__descr">Удаление мешков под глазами</p>
+          </div>
+        </div>
+
+        <div class="problems__btn-box problems__btn-box_consultation">
+          <button class="problems__btn popup-consultation" type="button">Получить консультацию</button>
+        </div>
+        <div class="problems__btn-box problems__btn-box_reception">
+          <button class="problems__btn popup-call" type="button">Записаться на приём</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <h2 class="about-us__title section-title">Почему выбирают нашу клинику</h2>
+        <ol class="about-us__list">
+          <li class="about-us__item about-us__item_1">
+            <div class="card">
+              <p class="card__subtitle">Онлайн консультация бесплатно</p>
+              <p class="card__descr">Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом</p>
+            </div>
+          </li>
+          <li class="about-us__item about-us__item_2">
+            <div class="card">
+              <p class="card__subtitle">Бесплатный осмотр после операции в течении года</p>
+              <p class="card__descr">Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом</p>
+            </div>
+          </li>
+          <li class="about-us__item about-us__item_3">
+            <div class="card">
+              <p class="card__subtitle">Лабораторные анализы можно сдать в нашей клинике</p>
+              <p class="card__descr">Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом</p>
+            </div>
+          </li>
+          <li class="about-us__item about-us__item_4">
+            <div class="card">
+              <p class="card__subtitle">Рассрочка без переплаты до 6 месяцев</p>
+              <p class="card__descr">Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом</p>
+            </div>
+          </li>
+          <li class="about-us__item about-us__item_5">
+            <div class="card">
+              <p class="card__subtitle">Опыт пластических хирургов более 16 лет</p>
+              <p class="card__descr">Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом</p>
+            </div>
+          </li>
+          <li class="about-us__item about-us__item_6">
+            <div class="card">
+              <p class="card__subtitle">Более 5000 проведенных операций по блефаропластике</p>
+              <p class="card__descr">Повседневная практика показывает, что социально-экономическое развитие создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="reviews__title section-title">Отзывы наших клиентов</h2>
+        <div class="section-tagline">
+          <p class="section-tagline__subtitle">Подписывайтесь на наш
+            <span class="section-tagline__span section-tagline__span_youtube">youtube</span>
+          </p>
+          <a class="reviews__tagline-link section-tagline__link" href="#"> Подписаться</a>
+        </div>
+
+        <div class="video-reviews">
+          <div class="video-reviews__card">
+            <img class="video-reviews__img" src="img/video.jpg" alt="Изображение видеоплеера">
+          </div>
+          <div class="video-reviews__card">
+            <img class="video-reviews__img" src="img/video.jpg" alt="Изображение видеоплеера">
+          </div>
+          <div class="video-reviews__card">
+            <img class="video-reviews__img" src="img/video.jpg" alt="Изображение видеоплеера">
+          </div>
+          <div class="video-reviews__card_mobile-hiden video-reviews__card">
+            <img class="video-reviews__img" src="img/video.jpg" alt="Изображение видеоплеера">
+          </div>
+          <div class="video-reviews__card_mobile-hiden video-reviews__card">
+            <img class="video-reviews__img" src="img/video.jpg" alt="Изображение видеоплеера">
+          </div>
+        </div>
+
+        <a class="button button_link" href="#">
+          <p class="button__text">Смотреть все видео</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="doctors" id="doctors">
+      <h2 class="doctors__title section-title">Наши волшебники</h2>
+
+      <div class="doctors__slider">
+        <div class="doctors__card">
+          <div class="doctors__photo">
+            <img class="doctors__img"  src="img/doctors/1@1x.jpg" srcset="img/doctors/1@2x.jpg 2x" alt="Фотография нашего врача" width="245" height="300">
+          </div>
+          <p class="doctors__position">Пластический хирург</p>
+          <div class="doctors__name">Кулесбаев Алибек Алдабергенович</div>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__photo">
+            <img class="doctors__img"  src="img/doctors/2@1x.jpg" srcset="img/doctors/2@2x.jpg 2x" alt="Фотография нашего врача" width="245" height="300">
+          </div>
+          <p class="doctors__position">Анестезиолог — Реаниматолог</p>
+          <div class="doctors__name">Кулесбаев Алибек Алдабергенович</div>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__photo">
+            <img class="doctors__img"  src="img/doctors/3@1x.jpg" srcset="img/doctors/3@2x.jpg 2x" alt="Фотография нашего врача" width="245" height="300">
+          </div>
+          <p class="doctors__position">Хирург — трансплантолог</p>
+          <div class="doctors__name">Кулесбаев Алибек Алдабергенович</div>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__photo">
+            <img class="doctors__img"  src="img/doctors/4@1x.jpg" srcset="img/doctors/4@2x.jpg 2x" alt="Фотография нашего врача" width="245" height="300">
+          </div>
+          <p class="doctors__position">Хирург 1 ранга</p>
+          <div class="doctors__name">Кулесбаев Алибек Алдабергенович</div>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__photo">
+            <img class="doctors__img"  src="img/doctors/3@1x.jpg" srcset="img/doctors/3@2x.jpg 2x" alt="Фотография нашего врача" width="245" height="300">
+          </div>
+          <p class="doctors__position">Хирург — трансплантолог</p>
+          <div class="doctors__name">Кулесбаев Алибек Алдабергенович</div>
+        </div>
+        <div class="doctors__card">
+          <div class="doctors__photo">
+            <img class="doctors__img"  src="img/doctors/4@1x.jpg" srcset="img/doctors/4@2x.jpg 2x" alt="Фотография нашего врача" width="245" height="300">
+          </div>
+          <p class="doctors__position">Хирург 1 ранга</p>
+          <div class="doctors__name">Кулесбаев Алибек Алдабергенович</div>
+        </div>
+      </div>
+
+      <div class="doctors__buttons">
+        <button class="doctors__button button popup-consultation" type="button">
+          <p class="button__text">Получить консультацию</p>
+        </button>
+        <button class="doctors__button button button_light popup-call" type="button">
+          <p class="button__text">Записаться на приём</p>
+        </button>
+      </div>
+    </section>
+
+    <div class="map" id="map">
+      <img class="map__img" src="img/map.jpg" alt="Изображение карты.">
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__links">
+          <div class="footer-logo">
+            <img class="footer-logo__img" src="img/logo.svg" width="70" height="70" alt="Логотип клиники Dr.Koblandin">
+          </div>
+
+          <div class="footer__social-links social-network">
+            <a class="social-network__link" href="#" aria-label="link to the social network instagram">
+              <svg class="social-network__icon" width="13" height="13">
+                <use href="img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+            <a class="social-network__link" href="#" aria-label="link to the social network facebook">
+              <svg class="social-network__icon" width="10" height="18">
+                <use href="img/sprite.svg#fb"></use>
+              </svg>
+            </a>
+            <a class="social-network__link" href="#" aria-label="link to the social network youtube">
+              <svg class="social-network__icon" width="14" height="10">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer__contacts">
+            <p class="footer__contacts-title">Контакты</p>
+            <div class="footer__contact contact">
+              <p class="contact__city">г.Алматы</p>
+              <a class="contact__phone" href="tel:+7 775 705 33 33">+7 775 705 33 33</a>
+              <p class="contact__adress">ул.Маркова,75, уг.Аль-Фараби</p>
+              <a class="contact__link-map"  href="">Смотреть на карте</a>
+            </div>
+            <div class="footer__contact contact">
+              <p class="contact__city">г.Нур-Султан</p>
+              <a class="contact__phone" href="tel:+7 775 705 33 33">+7 775 705 33 33</a>
+              <p class="contact__adress">ул. Бухар-Жырау, 20В, 201НП</p>
+              <a class="contact__link-map"  href="">Смотреть на карте</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-development">
+        <div class="footer-development__copyright">
+          <p class="footer-development__copyright-text">© Copyright 2021 - Dr.KoblandinClinic.ru</p>
+          <p class="footer-development__copyright-text">All Rights Reserved</p>
+        </div>
+        <div class="footer-development__box">
+          <p class="footer-development__text">Разработка сайтов</p>
+          <img class="footer-development__icon" src="img/developmentLogo.svg" alt="Логотип разработки сайтов">
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup-call">
+      <div class="popup__window">
+        <div class="popup__inner">
+          <button class="popup__close-btn close-popup" type="button" aria-label="Закрыть окно.">
+            <svg class="header-menu__icon-cross" width="15" height="14">
+              <use href="img/sprite.svg#cross"></use>
+            </svg>
+          </button>
+          <form class="popup__form popup__content-wrapper" method="POST" enctype="text/plain">
+            <fieldset class="popup__content">
+              <p class="popup__title">Заказать звонок</p>
+              <input class="popup__input" type="text" name="userName" placeholder="Имя*" maxlength="10" minlength="2" required>
+              <input class="popup__input" type="tel" name="userPhone" placeholder="Телефон*" maxlength="15" minlength="5" required>
+              <button class="popup__submit-btn button" type="submit" aria-label="Отправить заявку.">Отправить</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-consultation">
+      <div class="popup__window">
+        <div class="popup__inner">
+          <button class="popup__close-btn close-popup" type="button" aria-label="Закрыть окно.">
+            <svg class="header-menu__icon-cross" width="15" height="14">
+              <use href="img/sprite.svg#cross"></use>
+            </svg>
+          </button>
+          <form class="popup__form popup__content-wrapper" method="POST" enctype="text/plain">
+            <fieldset class="popup__content">
+              <p class="popup__title">Получить консультацию</p>
+              <input class="popup__input" type="text" name="userName" placeholder="Имя*" maxlength="10" minlength="2" required>
+              <input class="popup__input" type="tel" name="userPhone" placeholder="Телефон*" maxlength="15" minlength="5" required>
+              <button class="popup__submit-btn button" type="submit" aria-label="Отправить заявку.">Отправить</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="popup-success">
+      <div class="popup__window">
+        <div class="popup__inner">
+          <button class="popup__close-btn close-popup" type="button" aria-label="Закрыть окно.">
+            <svg class="header-menu__icon-cross" width="15" height="14">
+              <use href="img/sprite.svg#cross"></use>
+            </svg>
+          </button>
+          <div class="popup__content-wrapper">
+            <div class="popup__content">
+              <p class="popup__title">Ваша заявка отправлена</p>
+              <p class="popup__subtitle">В ближайшее время с вами свяжется наш консультант</p>
+              <button class="popup__submit-btn button close-popup" type="submit" aria-label="Закрыть окно.">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+</html>

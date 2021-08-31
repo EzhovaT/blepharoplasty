@@ -1,0 +1,33 @@
+.social-network {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $middle-mobile-width) {
+    align-items: flex-start;
+  }
+}
+
+.social-network__link {
+  text-decoration: none;
+  width: 22px;
+  height: 22px;
+  background-color: $light-background-color;
+  color: $main-dark-color;
+
+}
+
+.social-network__link_header {
+  @media (min-width: $tablet-width) {
+    background-color: $main-dark-color;
+    color: $light-text-color;
+  }
+}
+
+.social-network__icon {
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,110 @@
+.examples-slider {
+  .slick-list {
+    padding: 0 30% 0 0;
+
+    @media (min-width: $middle-mobile-width) {
+      padding: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0 15% 0 0;
+    }
+
+    @media (min-width: $middle-desktop-width) {
+      padding: 0;
+    }
+  }
+
+  .slick-slide {
+    width: 190px;
+    margin: 15px;
+  }
+}
+
+.video-reviews {
+  .slick-list {
+    @media (min-width: $middle-mobile-width) {
+      padding: 0 30% 0 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 0 10% 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+
+    @media (min-width: $middle-desktop-width) {
+      width: 1070px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.doctors__slider {
+  .slick-list {
+    padding: 0 20% 0 0;
+
+    @media (min-width: $middle-mobile-width) {
+      padding: 0;
+    }
+
+    @media (min-width: $middle-desktop-width) {
+      width: 1070px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-content: space-around;
+  width: 200px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+  }
+
+  li {
+    width: 30px;
+    height: 4px;
+    background-color: $slider-dots-color;
+    border-radius: 2px;
+  }
+
+  li.slick-active {
+    background-color: $main-dark-color;
+  }
+}
+
+
+.slick-arrow {
+  position: absolute;
+  top: 35%;
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  width: 80px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slick-next {
+  background-image: url("../img/sliderBtn.svg");
+  transform: rotate(180deg);
+  right: 0;
+}
+
+.slick-prev {
+  background-image: url("../img/sliderBtn.svg");
+}

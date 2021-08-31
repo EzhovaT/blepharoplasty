@@ -1,0 +1,101 @@
+.doctors {
+  padding: 100px 0;
+
+  @media (min-width: $middle-mobile-width) {
+    padding: 50px 0 100px;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    padding: 50px 38px 100px;
+  }
+}
+
+.doctors__title {
+  width: 270px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 365px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+}
+
+.doctors__slider {
+  margin-top: 30px;
+  padding-left: 16px;
+
+  @media (min-width: $middle-mobile-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.doctors__card {
+  @extend %fontMPlus;
+  width: 220px;
+  min-height: 350px;
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 20px;
+
+  @media (min-width: $middle-mobile-width) {
+    margin-left: 20px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 10px;
+  }
+}
+
+.doctors__photo {
+  width: 220px;
+  height: 269px;
+
+  @media (min-width: $middle-mobile-width) {
+    width: 100%;
+  }
+}
+
+.doctors__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctors__position {
+  font-weight: bold;
+}
+
+.doctors__position,
+.doctors__name {
+  width: 220px;
+  padding-top: 10px;
+}
+
+.doctors__buttons {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+
+.doctors__button {
+  @media (min-width: $tablet-width) {
+    margin: 0 15px;
+  }
+}

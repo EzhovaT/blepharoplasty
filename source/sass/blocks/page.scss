@@ -1,0 +1,9 @@
+.page {
+  @extend %fontMPlus;
+  background-color: $light-background-color;
+}
+
+.page__wrapper {
+  position: relative;
+  overflow: hidden;
+}

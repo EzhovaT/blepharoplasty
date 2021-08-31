@@ -1,0 +1,28 @@
+.call-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  background-image: linear-gradient(to right, $main-dark-color 75%, transparent 57%);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 1px;
+  color: $main-dark-color;
+  @extend %fontMPlus;
+  font-size: 13px;
+  line-height: 19px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 483px;
+    bottom: 23px;
+    z-index: 2;
+  }
+
+  @media (min-width: $middle-desktop-width) {
+    left: 790px;
+  }
+}

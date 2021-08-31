@@ -1,0 +1,53 @@
+.examples-slider {
+  @media (min-width: $desktop-width) {
+    padding: 38px 0;
+  }
+}
+
+.examples-slider__card {
+  width: 190px;
+  height: 190px;
+  padding: 0 16px;
+  margin: 15px;
+  background-color: $light-background-color;
+
+  @media (min-width: $middle-desktop-width) {
+    margin: 0;
+  }
+}
+
+.examples-slider__images {
+  height: 146px;
+  width: 158px;
+  border: 4px solid $main-dark-color;
+
+  @media (min-width: $middle-mobile-width) {
+    margin: 0 auto;
+  }
+}
+
+.examples-slider__img{
+  display: block;
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+  &:nth-child(even) {
+    border-top: 4px solid $main-dark-color;
+  }
+
+}
+
+.examples-slider__descr {
+  text-transform: uppercase;
+  color: $main-dark-color;
+  font-weight: bold;
+  padding: 2px 0;
+}
+
+.examples-slider__descr_after {
+  text-align: left;
+}
+
+.examples-slider__descr_before {
+  text-align: right;
+}

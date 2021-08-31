@@ -1,0 +1,54 @@
+.contact {
+  @extend %fontMPlus;
+  color: $light-text-color;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+  color: $dark-text-color;
+  }
+}
+
+.contact__city {
+  margin: 0;
+  font-size: 13px;
+  line-height: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 10px;
+    opacity: 0.5;
+  }
+}
+
+.contact__phone {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 13px;
+  }
+}
+
+.contact__adress {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.contact__link-map {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 100;
+  color: $light-text-color;
+  background-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    $light-text-color 75%,
+    transparent 57%
+  );
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 1px;
+}
