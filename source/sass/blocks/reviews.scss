@@ -31,4 +31,16 @@
     height: 11px;
     top: 20px;
   }
+
+  &:hover {
+    background: linear-gradient(267deg,#EF2F36, #90191E);
+
+    &::before {
+      background-image: url("../img/wYout.svg");
+    }
+  }
+
+  &:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(261.83deg, #EF2F36 0%, #90191E 100%);
+  }
 }

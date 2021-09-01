@@ -73,6 +73,10 @@
     background-repeat: no-repeat;
   }
 
+  &:hover {
+    -webkit-text-fill-color: $light-text-color;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }

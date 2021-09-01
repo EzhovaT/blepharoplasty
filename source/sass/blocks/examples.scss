@@ -63,4 +63,16 @@
   &::before {
     background-image: url("../img/inst.svg");
   }
+
+  &:hover {
+    background: linear-gradient( 265deg, #f9d76c,  #f9a837, #f03d74, #e62299, #6f3ea2, #4850ab);
+
+    &::before {
+      background-image: url("../img/wInst.svg");
+    }
+  }
+
+  &:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(260.75deg, #F9D76C -15.76%, #F9D76C -15.6%, #F9A837 13.66%, #F03D74 37.13%, #E62299 57.84%, #6F3EA2 88.13%, #4850AB 124.74%);
+  }
 }
