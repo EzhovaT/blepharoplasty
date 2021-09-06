@@ -9,7 +9,7 @@ $(document).ready(function () {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1366, //все что меньше 768px
+        breakpoint: 1366,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 2,
@@ -17,7 +17,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 1000, //все что меньше 768px
+        breakpoint: 1000,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
@@ -25,7 +25,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 768, //все что меньше 768px
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -33,7 +33,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 480, // все что меньше 480px
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -50,7 +50,7 @@ $(document).ready(function () {
     dots: false,
     responsive: [
       {
-        breakpoint: 1366, //все что меньше 768px
+        breakpoint: 1366,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -59,7 +59,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 1000, //все что меньше 768px
+        breakpoint: 1000,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -68,7 +68,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 768, //все что меньше 768px
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -86,7 +86,7 @@ $(document).ready(function () {
     dots: false,
     responsive: [
       {
-        breakpoint: 1366, //все что меньше 768px
+        breakpoint: 1366,
         settings: {
           slidesToShow: 4,
           slidesToScroll: 2,
@@ -95,7 +95,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 1000, //все что меньше 768px
+        breakpoint: 1000,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
@@ -104,7 +104,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 768, //все что меньше 768px
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -113,7 +113,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 480, //все что меньше 768px
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -259,10 +259,29 @@ function bodyUnLock() {
   }, timeout);
 }
 
-
 document.addEventListener('keydown', (e) => {
   if(isEscEvent(e)) {
     const popupActive = document.querySelector('.popup.open');
     popupClose(popupActive);
   }
 })
+
+//animation - element show
+
+function onEntry(entry) {
+  entry.forEach(change => {
+    if(change.isIntersecting) {
+      change.target.classList.add('element-animation_show');
+    } else {
+      change.target.classList.remove('element-animation_show');
+    }
+  });
+}
+
+let options = {threshold: [0.5]};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+
+for(let elem of elements) {
+  observer.observe(elem);
+}
